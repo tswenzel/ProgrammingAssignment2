@@ -5,6 +5,13 @@
   # cacheSolve(v)
   # cacheSolve(v)       #second cachSolve gives cached data
 
+
+# What the function does
+# 1 Set the value of the matrix
+# 2 Get the value of the matrix
+# 3 Set the value of the inverse
+# 4 Get the value of the inverse
+
 makeCacheMatrix <- function(x = matrix()) {
        inv <- NULL
        set <- function(y) {
