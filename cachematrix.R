@@ -13,15 +13,21 @@
 # 4 Get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
+# Define the inverse
        inv <- NULL
+# Define inverse as function of y, which sets the inverse equal to cached matrix x
        set <- function(y) {
              x <<- y
              inv <<- NULL
 }
+# Defines get value step
        get <- function() x
+# Calculates inverse in cache  
        setinv <- function(inverse) inv <<- inverse
+# Gets inverse from Cache    
        getinv <- function() inv
-       list(set = set, get = get,
+ # Returning values for matrix inverse 
+        list(set = set, get = get,
                        setinv = setinv,
                        getinv = getinv)
 }
