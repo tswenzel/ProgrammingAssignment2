@@ -44,6 +44,7 @@ cacheSolve <- function(x, ...) {
   data <- x$get()
 # Calculates matrix inverse
   inv <- solve(data, ...)
+# Cache calculated value
   x$setinv(inv)
 # Returns matrix inverse
   inv
